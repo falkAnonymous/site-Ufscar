@@ -3,42 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
     <title>Universidade Federal de São Carlos</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="menus container-fluid">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"> <img src="/img/" alt=""></a>
+                <a class="navbar-brand" href="#"> <img src="/img/banner.png"
+                        alt="Universidade Federal de São Carlos-Logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav flex-row-reverse text-center align-items-center">
+                        <li class="nav-item no-border">
+                            <a class="nav-link active" aria-current="page" href="#">A UFSCar</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#">Gestão</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">Processo Seletivos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Acesso à Informção</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Dropdown link
+                                Inscreva-se
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu text-center">
+                                <li><a class="dropdown-item" href="#">Faça um Vestibular</a></li>
+                                <li><a class="dropdown-item" href="#">Faça sua Graduação Aqui</a></li>
+                                <li><a class="dropdown-item" href="#">Faça sua Pós-Graduação</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -47,9 +55,115 @@
         </nav>
     </header>
 
-    <main>
-
+    <main class="container">
+        <div class="row"> <!--1 linha e 2 colunas na mesma linha-->
+            <div class="col text-center mt-4">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://imagemportal.ufscar.br/Lutantimanicomial.jpeg" class="d-block w-100"
+                                alt="...">
+                            <div class="carousel-caption d-none d-md-block text-dark">
+                                <h3>UFSCar promove atividades na Semana da Luta Antimanicomial</h3>
+                                <p> A programação é gratuita e reúne ações formativas e culturais...</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imagemportal.ufscar.br/82188_f515eaf7_8608_48ee_a8d0_1b93b96e461e_8685539287933149792.jpeg"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3>UFSCar oferta 500 bolsas para pós-graduandos em parceria com Univesp</h3>
+                                <p class="border border-warning-subtle bg-light opacity-75"><b
+                                        class=" text-success">Estão abertas as inscrições na seleção para Bolsas
+                                        Facilitadores da Universidade Virtual do Estado de São Paulo (Univesp) voltadas
+                                        para estudantes de mestrado e doutorado da</b></p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://imagemportal.ufscar.br/82158_portal_6055106372826557218.png"
+                                class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h3 class="bg-dark opacity-75"><b class="text-light">EnvelheCiência: Demência é tudo
+                                        igual?</b></h3>
+                                <p class=" opacity-75"><b class="text-light">Tony Bennett, Robin Williams e Bruce
+                                        Willys: o que esses três têm em comum, além de serem celebridades?</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-main-right col text-center">
+                <div>
+                    <img src="https://www.ufscar.br/portal/banners-laterais/coordenadoria-de-comunicacao-social/view/++widget++form.widgets.image/@@download/Coordenadoria%20de%20Comunica%C3%A7%C3%A3o%20Social.png"
+                        alt="">
+                </div>
+                <div class="mt-3">
+                    <img src="https://www.ufscar.br/portal/banners-laterais/revista-ufscar/view/++widget++form.widgets.image/@@download/Ci%C3%AAncia%20UFSCar.jpeg"
+                        alt="">
+                </div>
+                <div class="mt-3">
+                    <img src="https://www.ufscar.br/portal/banners-laterais/gestao-ufscar/view/++widget++form.widgets.image/@@download/Gest%C3%A3o%20UFSCar.jpeg"
+                        alt="">
+                </div>
+                <div class="mt-3">
+                    <img src="https://www.ufscar.br/portal/banners-laterais/radio-ufscar/view/++widget++form.widgets.image/@@download/radioufscarnovo.jpeg"
+                        alt="" width="300">
+                </div>
+                <div class="mt-3">
+                    <img src="https://www.ufscar.br/portal/banners-laterais/edufscar/view/++widget++form.widgets.image/@@download/EDUFSCAR.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row"><!--2 LINHA 2 Coluna-->
+            <div class="col"><!--1coluna-->
+                <iframe width="600" height="349" src="https://www.youtube.com/embed/54bbAt4uWlw"
+                    title="UFSCar sedia novo INCT em Biodiversidade e Uso Sustentável de Peixes Neotropicais"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col"><!--2coluna-->
+                <div class="mini-video mini-1">
+                    <img src="https://img.youtube.com/vi/4oQNjfdUuPs/0.jpg" alt="" width="80">
+                    <h6 class="text-center">
+                        Reajuste de bolsas acadêmicas
+                    </h6>
+                </div>
+                <div class="mini-video">
+                    <img src="https://img.youtube.com/vi/7AQTqO0JANk/0.jpg" alt="" width="80">
+                    <h6 class="text-center">
+                        Projetos da UFSCar focam qualidade de vida para o trabalhador
+                    </h6>
+                </div>
+                <div class="mini-video mini-3">
+                    <img src="https://img.youtube.com/vi/XLl5NkhZ3DQ/0.jpg" alt="" width="80">
+                    <h6 class="text-center">
+                        UFSCar promove primeiro encontro entre rádios universitárias paulistas
+                    </h6>
+                </div>
+            </div>
+        </div>
+        
     </main>
+    <footer class="containe ">
+        <div class="row-sm"><!--Roda pe-->
+            <div class="col bg-dark position-relative">
+                <h5>
+                    hahaha
+                </h5>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="/js/bootstrap.bundle.min.js"></script>
 
 </html>

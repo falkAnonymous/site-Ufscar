@@ -1,0 +1,32 @@
+.menus{
+    background-color: #FF6C29;
+}
+.nav-item{
+    margin: 5px;
+}
+li.nav-item{
+    border-right: 1px solid white;
+}
+li.no-border{
+    border-right: none;
+}
+.img-main-right{
+    padding: 50px;
+}
+.mini-video{
+    margin-top: 20px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 50px;
+    border-bottom: 3px dotted black;
+}
+.mini-1{
+    margin-top: 0;
+    padding-bottom: 50px;
+    border-bottom: 3px dotted black;
+}
+.mini-3{
+    border: none;
+}
